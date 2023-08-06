@@ -51,9 +51,9 @@ a:hover :nth-child(2) {
 /* Target the #navbar element */
 #navbar {
   display: flex;
-  justify-content: space-around;
-  background-color: lightgray;
-  padding: 10px;
+  /* justify-content: space-around; */
+  background-color: rgb(167, 99, 99);
+  padding: 20px;
 }
 
 /* Target the Link components inside the #navbar element */
@@ -91,3 +91,12 @@ a:hover :nth-child(2) {
   justify-content: center;
 }
 
+
+.playerbutton {
+  background-color: aqua;
+  color:brown;
+  border: 3px solid black;
+  padding: 10px;
+  font-size: xx-large;
+
+}
