@@ -8,19 +8,19 @@ body,
 body > div {
   height: 100vh;
   width: 100vw;
-}
 
+}
+/* 
 #container {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
   color: black;
 }
 
 #container > div {
-  display: flex;
+  display: grid;
   color: black;
-}
+} */
 
 #navbar {
   padding: 2em;
@@ -30,6 +30,7 @@ body > div {
   color:gold;
   background-color: aqua;
 }
+
 
 /* Target the Link components inside the #navbar element and set the font color to red */
 #navbar a {
@@ -42,40 +43,7 @@ body > div {
   color: rgb(0, 0, 0);
 }
 
-a:hover :nth-child(2) {
-  background-color: red;
-}
 
-/* index.css */
-
-/* Target the #navbar element */
-#navbar {
-  display: flex;
-  /* justify-content: space-around; */
-  background-color: rgb(167, 99, 99);
-  padding: 20px;
-}
-
-/* Target the Link components inside the #navbar element */
-#navbar a {
-  text-decoration: none; /* To remove the default underline on links */
-  padding: 5px; /* Adding padding to make the links look nicer */
-}
-
-/* Apply a different hover color for the red link */
-#navbar .red-link:hover {
-  color: darkred;
-}
-
-/* Apply a different hover color for the blue link */
-#navbar .blue-link:hover {
-  color: darkblue;
-}
-
-/* Apply a different hover color for the yellow link */
-#navbar .yellow-link:hover {
-  color: goldenrod;
-}
 
 
 
@@ -85,18 +53,69 @@ a:hover :nth-child(2) {
 }
 
 #main-section > div {
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 
-.playerbutton {
+.buttons {
+  background-color: aqua;
+  color:brown;
+  border: 3px solid black;
+  padding: 10px;
+  font-size: large;
+  text-decoration: none;
+
+}
+
+.buttons:hover {
+  background-color: #381465;
+}
+
+.homebuttons {
   background-color: aqua;
   color:brown;
   border: 3px solid black;
   padding: 10px;
   font-size: xx-large;
+  text-decoration: none;
 
 }
+
+.homebuttons:hover {
+  background-color: #381465;
+}
+
+.images {
+display: grid;
+height: 300px;
+background-color: blueviolet;
+align-items: center;
+border-radius: 15px;
+
+}
+
+.name {
+  display: grid;
+  border: 3px solid black;
+  grid-template-rows: 3;
+  background-color: aqua;
+  border-radius: 15px;
+}
+
+.allplayers {
+  display: inline-grid;
+  border: 5px solid black;
+  border-radius: 15px;
+  background: #73AD21;
+  padding: 20px;
+  padding: 10px;
+    /* grid-template-columns: repeat(2, 100px); */
+  column-gap: 20px;
+  row-gap: 10px;
+  /* justify-items: center; */
+  /* justify-content: space-evenly; */
+  
+}
+

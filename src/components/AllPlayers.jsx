@@ -89,14 +89,15 @@ export default function AllPlayers() {
   }
 
   const playerRows = filteredPlayers.map((player) => (
-    <tr key={player.id}>
-      <td>{player.name}</td>
+    <tr className="allplayers" key={player.id}>
+      
       <td className="images">
-        <img src={player.imageUrl} width="100" height="100" alt={player.name} />
+        <img src={player.imageUrl} alt={player.name} width="200" />
       </td>
+      <td className="name">{player.name}</td>
       <td>
         <button
-          className="detailsbutton"
+          className="details"
           onClick={() => {
             navigate(`/players/${player.id}`);
           }}
@@ -116,9 +117,8 @@ export default function AllPlayers() {
       />
       <table>
         <thead>
+          
           <tr>
-            <th>Name</th>
-            <th>Image</th>
           </tr>
         </thead>
         <tbody>{playerRows}</tbody>

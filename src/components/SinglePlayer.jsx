@@ -51,10 +51,10 @@ export default function SinglePlayer() {
           <td>Status: {player.status}</td>
           <td>Breed: {player.breed}</td>
           <td className="images">
-            <img src={player.imageUrl} width="100" height="100" />
+            <img src={player.imageUrl} width="400" />
           </td>
           <td>
-            <button className="deletebutton" onClick={handleDeleteClick}>
+            <button className="buttons" onClick={handleDeleteClick}>
               Delete
             </button>
           </td>

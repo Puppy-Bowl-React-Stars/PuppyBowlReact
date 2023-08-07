@@ -16,7 +16,7 @@ const SearchBar = ({ onSearch }) => {
           placeholder="Search..."
           onChange={handleSearchChange}
         />
-        <button className="search_button" type="submit">
+        <button className="buttons" type="submit">
           Search
         </button>
       </form>
