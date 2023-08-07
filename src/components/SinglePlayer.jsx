@@ -41,24 +41,25 @@ export default function SinglePlayer() {
   return (
     <table>
       <thead>
-        <tr>
-          <th>Player Details</th>
-        </tr>
+   <th></th>
       </thead>
       <tbody>
-        <tr>
-          <td>Name: {player.name}</td>
-          <td>Status: {player.status}</td>
-          <td>Breed: {player.breed}</td>
+      <td className="playerdet">
+      Name: {player.name}
+      <br />
+          Status: {player.status}
+          <br />
+          Breed: {player.breed}
+          </td>
           <td className="images">
-            <img src={player.imageUrl} width="400" />
+            <img src={player.imageUrl} width="300" />
           </td>
           <td>
             <button className="buttons" onClick={handleDeleteClick}>
               Delete
             </button>
           </td>
-        </tr>
+          
       </tbody>
     </table>
   );
