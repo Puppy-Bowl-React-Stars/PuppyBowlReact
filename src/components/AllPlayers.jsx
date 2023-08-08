@@ -52,7 +52,7 @@
 // }
 
 import React, { useEffect, useState } from "react";
-import fetchAllPlayers from "./ajaxHelpers";
+import fetchAllPlayers from "./ajaxhelpers";
 import { useNavigate } from "react-router-dom";
 
 export default function AllPlayers() {
