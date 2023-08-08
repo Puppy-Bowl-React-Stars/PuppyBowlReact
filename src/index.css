@@ -192,3 +192,16 @@ body {
     25px 25px 0px #6868AC,  */
 
 }
+
+
+.new-player-form{
+
+}
+
+input[type=text] {
+  background-color: none;
+  /* border: 3px solid #555; */
+
+  border: none;
+  border-bottom: 2px solid red;
+}
