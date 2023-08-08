@@ -28,7 +28,7 @@ body > div {
   font-size: xx-large;
   border: 3px solid black;
   color:gold;
-  background-color: aqua;
+  background-color: rgb(63, 84, 137);
 }
 
 
@@ -90,6 +90,7 @@ body > div {
 }
 
 .homebuttons {
+  display: inline-grid;
   background-color: aqua;
   color:brown;
   border: 3px solid black;
@@ -137,14 +138,57 @@ border: 2px solid black;
   
 }
 
+.back-button {
+  background-color: aqua;
+  color:brown;
+  border: 2px solid black;
+  padding: 10px;
+  font-size: large;
+  text-decoration: none;
+  cursor:pointer;
+  align-self: flex-start;
+}
+
 
 .playerdet {
-  /* display: grid; */
+
   font-size: x-large;
   border: 5px solid black;
   border-radius: 15px;
   background: #73AD21;
-padding: 50px;
+padding: 40px;
+align-items: center;
+background-color: dodgerblue;
+  color: white;
 
+}
+
+.welcome {
+  font-size: xx-large;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Calligraffitti&display=swap');
+
+body {
+  background: #6868AC;
+}
+
+.welcome {
+  font-family: 'Calligraffitti', cursive;
+  font-weight: 200;
+  font-size: 5rem;
+
+/*  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #F9f1cc;
+  text-shadow: 5px 5px 0px #FFB650, 
+    10px 10px 0px #FFD662, 
+    15px 15px 0px  #FF80BF, 
+    20px 20px 0px #EF5097, 
+    25px 25px 0px #6868AC,  */
 
 }

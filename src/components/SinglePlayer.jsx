@@ -39,28 +39,35 @@ export default function SinglePlayer() {
   }
 
   return (
-    <table>
-      <thead>
-   <th></th>
-      </thead>
-      <tbody>
-      <td className="playerdet">
+<>
+      
+          
+          <div className="playerdet">
+          <div><button
+          className="back-button"
+          onClick={() => {
+            navigate(`/allplayers/`);
+          }}
+        >Back to player list </button></div>
+          <h2>Player Details</h2>
+          <br />
       Name: {player.name}
       <br />
+      
           Status: {player.status}
           <br />
           Breed: {player.breed}
-          </td>
-          <td className="images">
-            <img src={player.imageUrl} width="300" />
-          </td>
-          <td>
-            <button className="buttons" onClick={handleDeleteClick}>
-              Delete
-            </button>
-          </td>
+          <br />
+          <br />
+            <img src={player.imageUrl} width="400" />
           
-      </tbody>
-    </table>
+          <div>
+            <button className="buttons" onClick={handleDeleteClick}>
+              Delete player
+            </button>
+            </div>
+            </div>
+            
+            </>
   );
 }
